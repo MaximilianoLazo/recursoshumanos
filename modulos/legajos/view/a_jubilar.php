@@ -65,6 +65,7 @@
 						</div>
 
 						<table class="data-table table-bordered stripe hover nowrap">
+						
 						<button type="button"
 								class="btn btn-success"
 								data-toggle="modal"
