@@ -1,0 +1,117 @@
+/*
+@font-face {
+  font-family: SourceSansPro;
+  src: url(SourceSansPro-Regular.ttf);
+}
+*/
+/*@import url('https://fonts.googleapis.com/css?family=Titillium+Web');*/
+@page {
+    margin-top: 1.5cm;
+    margin-bottom: 0.50cm;
+    margin-left: 3cm;
+    margin-right: 2cm;
+}
+.headerdescd{
+  font-family: titilliumweb, Calibri, Arial, sans-serif;
+  text-align: right;
+  font-size: 6.5pt;
+  /*border-spacing: 5px;*/
+  /*border-collapse: separate;*/
+  padding: 0px;
+  color: #63666a;
+}
+.headerdesci{
+  font-family: titilliumweb, Calibri, Arial, sans-serif;
+  text-align: left;
+  font-size: 6.5pt;
+  color: #63666a;
+}
+.headerdescinegrita{
+  font-family: titilliumweb, Calibri, Arial, sans-serif;
+  text-align: left;
+  font-size: 8.5pt;
+  font-weight: bold;
+  color: #63666a;
+}
+.titulo{
+  font-family: titilliumweb, Calibri, Arial, sans-serif;
+  text-align: center;
+  font-size: 12.4pt;
+  font-weight: bold;
+}
+
+.subrayado{
+  text-decoration: none;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  padding-bottom: 1px;
+
+}
+.alndesc{
+  font-family: titilliumweb, Calibri, Arial, sans-serif;
+  font-size: 14.4pt;
+}
+.cabecera{
+  font-family: titilliumweb, Calibri, Arial, sans-serif;
+  font-size: 12.4pt;
+}
+.firmas{
+  font-family: titilliumweb, Calibri, Arial, sans-serif;
+  font-size: 9pt;
+  width: 100%;
+  text-align: center;
+}
+.firmas td {
+  width: 33.3%;
+}
+.lineadepuntos{
+  border-bottom: 2px dotted;
+}
+.aclaracion{
+  font-family: titilliumweb, Calibri, Arial, sans-serif;
+  text-align: center;
+  font-style: italic;
+  font-size: 7pt;
+}
+.cupon{
+  font-family: titilliumweb, Calibri, Arial, sans-serif;
+  width: 100%;
+  border-spacing: 5px;
+  border-collapse: separate;
+  font-size: 10pt;
+}
+.cuadrado{
+  font-family: titilliumweb, Calibri, Arial, sans-serif;
+  width: 30%;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 7pt;
+  font-weight: bold;
+}
+.fooster{
+  font-family: titilliumweb, Calibri, Arial, sans-serif;
+  text-align: right;
+  border-top: 1px solid #000000;
+  font-size: 10pt;
+}
+
+
+
+
+
+
+body {
+
+  color: #000000;
+  background: #FFFFFF;
+  /*font-family: 'Titillium Web', Calibri, Arial, sans-serif;*/
+  font-family: Calibri, Arial, sans-serif;
+  font-size: 9.4pt;
+  /*font-size: 14.5px;*/
+  text-align: justify;
+  line-height : 30px;
+  /*font-family: SourceSansPro;*/
+}
+.articulo{
+  font-size: 10.4pt;
+}

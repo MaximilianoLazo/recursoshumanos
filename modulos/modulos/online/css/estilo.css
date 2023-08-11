@@ -1,0 +1,500 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	width: 100%;
+	height: auto;
+	color:white;
+	background: -moz-linear-gradient(left, rgba(6,74,153,1) 0%, rgba(125,185,232,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(6,74,153,1)), color-stop(100%,rgba(125,185,232,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left, rgba(6,74,153,1) 0%,rgba(125,185,232,1) 100%); /* Chrome10+,Safari5.1+ */
+background-repeat: repeat-y;
+  background-size: contain; 
+	font-family: arial black;
+	text-shadow:1px 1px 1px black;
+}
+header{
+	width: 30%;
+	height: auto;
+	margin: 1% auto;
+	text-align: center;
+}
+form{
+	width: 80%;
+	height: auto;
+	margin: 1% auto;
+	padding: 3px;
+	color:white;
+	text-align: center;
+	box-sizing:border-box; 
+	-moz-transition:all 1s ease;
+	-webkit-transition:all 1s ease;
+
+}
+form h1{
+	color:white;
+	text-align: center;
+	font-size: 200%;
+	text-shadow:1px 1px 1px black;
+
+}
+form a{
+	color:white;
+	text-decoration: none;
+	text-align: center;
+	font-size: 90%;
+}
+
+input{
+	width: 90%;
+	height: 40px;
+	margin: 5px auto;
+	padding-left: 15px;
+}
+select{
+	width: 40%;
+	height: 40px;
+	margin: auto;
+	border-radius: 15px;
+	padding-left: 15px;
+}
+textarea{
+	width: 90%;
+	height: 100px;
+	border-radius: 15px;
+	padding-left: 15px;
+	border:1px solid gray;
+}
+input[type="submit"]{
+	width: 100px;
+	font-family: arial black;
+	text-align: center;
+	color:white;
+	text-shadow:1px 1px 1px black;
+	padding: 10px;
+	height: auto;
+	margin: 4%;
+	border:none;
+	background: -moz-linear-gradient(top, rgba(157,213,58,1) 0%, rgba(161,213,79,1) 50%, rgba(128,194,23,1) 51%, rgba(124,188,10,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(157,213,58,1)), color-stop(50%,rgba(161,213,79,1)), color-stop(51%,rgba(128,194,23,1)), color-stop(100%,rgba(124,188,10,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(157,213,58,1) 0%,rgba(161,213,79,1) 50%,rgba(128,194,23,1) 51%,rgba(124,188,10,1) 100%); /* Chrome10+,Safari5.1+ */
+}
+#resultado, #mensaje, #res {
+	font-size: 20px;
+	color: yellow;
+
+}
+
+/*PESTAÑAS*/
+
+.tabs { /* es el rectángulo contenedor */
+margin: 0 auto;
+min-height: 500px;
+position: relative;
+width: 35%;
+	-moz-transition:all 1s ease;
+		-webkit-transition:all 1s ease;
+}
+.tab { /* cada una de las pestañas */
+float: left;
+}
+.tab label { /* la parte superior con el título de la pestaña */
+background-color: rgba(6,74,153,0.5);
+cursor: pointer;
+left: 0;
+margin-right: 1px;
+padding: 10px 15px;
+position: relative;
+text-shadow: 1px 1px #000;
+}
+/* el control input sólo lo necesitamos para que las pestañas permanezcan abiertas así que lo ocultamos */
+.tab [type=radio] { display: none; }
+
+/* el contenido de las pestañas */
+.content {
+bottom: 0;
+left: 0;
+overflow: hidden;
+padding: 20px;
+position: absolute;
+right: 0;
+top: 23px;
+}
+/* y un poco de animación */
+.content > * {
+opacity: 0;
+
+-moz-transform: translateX(-100%);
+-webkit-transform: translateX(-100%);
+-o-transform: translateX(-100%);
+
+-moz-transition: all 0.6s ease;
+-webkit-transition: all 0.6s ease;
+-o-transition: all 0.6s ease;
+}
+
+/* controlamos la pestaña activa */
+[type="radio"]:checked ~ label {
+background-color: rgba(125,185,232,0.5);
+color: #FFF;
+z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content { z-index: 1; }
+[type=radio]:checked ~ label ~ .content > * {
+opacity: 1;
+-moz-transform: translateX(0);
+-webkit-transform: translateX(0);
+-o-transform: translateX(0);
+-ms-transform: translateX(0);
+}
+
+/*PESTAÑAS*/
+
+
+
+
+
+
+
+
+nav ul{
+	list-style: none;
+}
+nav h1{
+	color:white ;	
+	text-shadow:1px 1px 1px black;
+}
+nav ul li a{
+	width: 300px;
+	height: 60px;
+	text-decoration: none;
+	color:white;
+	text-align: center;
+	display: block;
+	background: -moz-linear-gradient(top, rgba(157,213,58,1) 0%, rgba(161,213,79,1) 50%, rgba(128,194,23,1) 51%, rgba(124,188,10,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(157,213,58,1)), color-stop(50%,rgba(161,213,79,1)), color-stop(51%,rgba(128,194,23,1)), color-stop(100%,rgba(124,188,10,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(157,213,58,1) 0%,rgba(161,213,79,1) 50%,rgba(128,194,23,1) 51%,rgba(124,188,10,1) 100%); /* Chrome10+,Safari5.1+ */
+	padding: 15px;
+	font-size: 20px;
+	box-sizing:border-box;
+	margin: 10px auto;
+	border-bottom: 4px solid green;
+}
+nav ul li a:hover{
+	width: 300px;
+	height: 60px;
+	text-decoration: none;
+	color:white;
+	text-align: center;
+	display: block;
+	background: -moz-linear-gradient(top, rgba(157,213,58,1) 0%, rgba(161,213,79,1) 50%, rgba(128,194,23,1) 51%, rgba(124,188,10,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(157,213,58,1)), color-stop(50%,rgba(161,213,79,1)), color-stop(51%,rgba(128,194,23,1)), color-stop(100%,rgba(124,188,10,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(157,213,58,1) 0%,rgba(161,213,79,1) 50%,rgba(128,194,23,1) 51%,rgba(124,188,10,1) 100%); /* Chrome10+,Safari5.1+ */
+	padding: 15px;
+	font-size: 20px;
+	box-sizing:border-box;
+	margin: 10px auto;
+	border-bottom: 2px solid green;
+	-moz-transition:all 1s ease;
+	-webkit-transition:all 1s ease;
+
+}
+section{
+	width: 30%;
+	color:white;
+	height: auto;
+	margin: 1% auto;
+	text-align: center;
+	box-sizing:border-box;
+}
+section img{
+	width: 70px;
+	height: 70px;
+	border:3px solid white;
+	padding: 3px;
+	border-radius: 5px;
+	box-sizing:border-box;
+	border:2px solid white;
+	margin-right: 10px;
+}
+section #nombre{
+	color:white;
+	width: 50%;
+	padding: 10px;
+	height: 50px;
+	box-sizing:border-box;	
+}
+a{
+	width: 30%;
+	text-align: center;
+	margin: auto;
+	height: 50px;
+	color:white;
+	padding: 10px;
+	box-sizing:border-box;
+	text-decoration: none;
+}
+/*CSS tabla*/
+
+table, table td, table tr {
+	padding:0px;
+	border-spacing: 0px;
+	margin: auto;
+}
+
+table {
+	border:1px black solid;
+	border-radius:5px;
+	max-width: 80%;
+	font-family: Helvetica,Arial;
+}
+
+table td {
+	padding:6px;
+}
+
+table tr:first-child td:first-child {
+	border-radius:5px 0px 0px 0px;
+}
+
+table tr:first-child td:last-child {
+	border-radius:0px 5px 0px 0px;
+}
+
+table tr:last-child td:first-child {
+	border-radius:0px 0px 0px 5px;
+}
+
+table tr:last-child td:last-child {
+	border-radius:0px 0px 5px 0px;
+}
+
+table td:not(:last-child) {
+	border-right:1px #666 solid;
+}
+
+table.header tr:not(:first-child):hover, table:not(.header) tr:hover {
+	background:rgba(6,74,153,0.4);
+}
+
+table:not(.header) tr {
+	text-align: center;
+}
+
+table.header tr:first-child {
+	font-weight: bold;
+	background-color:rgb(157,213,58);
+	border-bottom:2px #000 solid;
+	text-align:center;
+}
+
+table.header tr:nth-child(n+2) {
+	text-align: center;
+}
+
+/*CSS TABLA*/
+
+#icono{
+	width: 20px;
+	height: 20px;
+}
+#id{
+	color:yellow;
+	text-shadow:0px 0px 3px red;
+}
+
+ul li{
+	display: inline-block;
+	margin: auto;
+}
+#foto{
+	width: 100%;
+	margin: auto;
+	text-align: center;
+}
+
+#foto img{
+	margin:10px auto;
+	width: 100px;
+	height: 100px;
+	border-radius: 20px;
+}
+#resultados h1,h2,h3,h4,h5,h6{
+	color: white;
+	text-align: center;
+}
+#paginas{
+	width: 80%;
+	height: auto;
+	text-decoration: none;
+	margin: 0% auto;
+	text-align: center;
+	padding:1%;
+	box-sizing:border-box;
+}
+#paginas a{
+	text-decoration: none;
+	font-size: 20px;
+	
+}
+#pregunta{
+	width: 80%;
+	height: auto;
+	color:white;
+	margin:auto;
+	margin-top: 1%;
+	font-size: 40px;
+}
+#pregunta p{
+	font-size: 25px;
+	text-align: center;
+	padding: 10px;
+	color:white;
+}
+#pregunta img{
+	width:80%;
+	height: 15em;
+	margin:auto;
+}
+#activarpregunta{
+	width: 200px;
+	height: auto;
+	padding: 5px;
+}
+#pag{
+	width:30px;
+	height: auto;
+	font-size: 25px;
+	display:inline-block;
+	color:white;
+	margin-top: 1em;
+}
+#respuestas{
+	width: 100%;
+	height:auto;
+	margin: 1% auto;
+}
+#respuestas a{
+	width: 80%;
+	margin: 5px auto;
+	height: auto;
+	font-size: 10%;
+	text-align:center;
+	display: block;
+	background: -moz-linear-gradient(top, rgba(157,213,58,1) 0%, rgba(161,213,79,1) 50%, rgba(128,194,23,1) 51%, rgba(124,188,10,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(157,213,58,1)), color-stop(50%,rgba(161,213,79,1)), color-stop(51%,rgba(128,194,23,1)), color-stop(100%,rgba(124,188,10,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(157,213,58,1) 0%,rgba(161,213,79,1) 50%,rgba(128,194,23,1) 51%,rgba(124,188,10,1) 100%); /* Chrome10+,Safari5.1+ */
+	text-decoration: none;
+	color:white;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 20px;
+}
+#respuestas #op{
+	color:yellow;
+}
+#resultados{
+	width: 80%;
+	padding: 5px;
+	margin:auto;
+	color:white;
+	box-sizing:border-box;
+	text-align: left;
+}
+#resultados img{
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+}
+#resultados h2{
+	text-align: left;
+}
+#resultados #num{
+	position: relative;
+	top:-15px;
+	left:10px;
+	color:white;
+	font-size: 20px;
+	width: 40px;
+	height: 40px;
+	box-sizing:border-box;
+}
+meter{
+	width: 20%;
+	height: 30px;
+	margin: auto;
+	background:black;
+	padding: 2px;
+
+}
+#respuestaenviada{
+	width: 80%;
+	height: auto;
+	padding-top:10%; 
+}
+#respuestaenviada h1{
+	margin: auto;
+	width: 80%;	
+	height: 45px;
+	padding: 10px;
+	box-sizing:border-box;
+}
+#respuestaenviada a{
+	margin: auto;
+	width: 80%;	
+	height: 45px;
+	padding: 10px;
+	box-sizing:border-box;
+	color: white;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+#ver{
+	width: 80%;
+	height: auto;
+	padding-top:10%;
+}
+footer{
+	text-align: center;
+}
+
+
+@media screen and (min-width: 401px) and (max-width: 767px) {
+	header{
+		width: 60%;
+	}
+	.tabs, section{
+		width: 70%;
+		margin: 1% auto;
+		-moz-transition:all 1s ease;
+		-webkit-transition:all 1s ease;
+	}	
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	.tabs, section{
+		width: 50%;
+		margin: 1% auto;
+		-moz-transition:all 1s ease;
+		-webkit-transition:all 1s ease;
+	}	
+	header{
+		width: 50%;
+	}
+}
+@media screen and (max-width: 400px) {
+	.tabs, section{
+		width: 90%;
+		margin: 1% auto;
+		-moz-transition:all 1s ease;
+		-webkit-transition:all 1s ease;
+	}	
+	header{
+		width: 80%;
+		margin: auto;
+	}
+}

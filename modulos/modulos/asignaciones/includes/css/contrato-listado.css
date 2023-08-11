@@ -1,0 +1,70 @@
+/*
+@font-face {
+  font-family: SourceSansPro;
+  src: url(SourceSansPro-Regular.ttf);
+}
+*/
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@page {
+    margin-top: 2cm;
+    margin-bottom: 2cm;
+    margin-left: 2cm;
+    margin-right: 2cm;
+}
+p{
+  /*font-family: Calibri, Arial, sans-serif;*/
+  font-family: 'Titillium Web', sans-serif;
+}
+table{
+  width: 100%;
+  /*font-family: Calibri, Arial, sans-serif;*/
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 10px;
+  border-collapse: collapse;
+}
+td{
+  margin: 6px;
+  padding: 6px;
+}
+table .cabezera{
+  font-family: 'Titillium Web', sans-serif;
+  text-align: right;
+  background-color: #FFFFFF;
+  font-size: 7pt
+}
+th{
+   margin: 6px;
+   padding: 6px;
+   background: #848484;
+}
+table tr:nth-child(odd) {
+  background-color: #FFFFFF;
+}
+table tr:nth-child(even) {
+  background-color: #E6E6E6;
+}
+table .apellido {
+  width: 20%;
+}
+table .importe {
+  width: 12%;
+  text-align: right;
+  font-weight: bold;
+  /*background: #57B223;*/
+}
+table .nrodocumento{
+  font-weight: bold;
+}
+table .firma {
+  width: 20%;
+}
+.fooster{
+  font-family: titilliumweb, Calibri, Arial, sans-serif;
+  text-align: right;
+  border-top: 1px solid #000000;
+  font-size: 8pt;
+  /*margin-top: 20px;*/
+}
+.copy{
+  font-family: Calibri, Arial, sans-serif;
+}

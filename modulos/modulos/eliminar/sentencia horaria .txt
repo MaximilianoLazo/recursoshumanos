@@ -1,0 +1,1 @@
+SELECT * FROM `legajos_reloj` WHERE marcacion_accessid = 36583053 AND Time(legreloj_domingohe) - Time('00:50:00') < Time('06:55:00') AND Time(legreloj_domingohe) + Time('00:50:00') > Time('06:55:00')

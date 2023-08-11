@@ -1,0 +1,1 @@
+SELECT legempleado_nrodocto, SEC_TO_TIME(SUM(TIME_TO_SEC(TIMEDIFF(legreloj_luneshs, legreloj_luneshe)))) TotalHoras FROM legajos_reloj GROUP BY legempleado_nrodocto

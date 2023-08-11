@@ -1,0 +1,72 @@
+@media only screen and (max-width: 768px) {
+	table.obbeneficiario,
+	.obbeneficiario thead,
+	.obbeneficiario tbody,
+	.obbeneficiario tr,
+	.obbeneficiario th,
+	.obbeneficiario td,
+	.obbeneficiario caption {
+	  display: block;
+
+	}
+
+	table.obbeneficiario {
+
+		border: none
+	}
+
+	.obbeneficiario thead tr {
+	  display: none;
+	}
+
+	.obbeneficiario tbody tr {
+	 /* margin: 1em 0; */
+	  border-bottom: 2px solid #2ba6cb;
+	}
+
+	.obbeneficiario td {
+	  border: none;
+ 	/*	border-bottom: 1px solid #dddddd; */
+	  position: relative;
+	  padding-left: 45%;
+	  text-align: left;
+	}
+
+	.obbeneficiario tr td:last-child {
+	  border-bottom: 1px double #dddddd;
+	}
+
+	.obbeneficiario tr:last-child td:last-child {
+	  border: none;
+	}
+
+	.obbeneficiario td:before {
+	  position: absolute;
+	  top: 6px;
+	  left: 6px;
+	  width: 45%;
+	  padding-right: 10px;
+	  white-space: nowrap;
+	  text-align: left;
+	  font-weight: bold;
+	}
+
+	.obbeneficiario td:nth-of-type(1):before {
+		content: "Escuela"
+	}
+
+	.obbeneficiario td:nth-of-type(2):before {
+		content: "Nivel";
+	}
+
+	.obbeneficiario td:nth-of-type(3):before {
+		content: "Estado";
+	}
+
+	.obbeneficiario td:nth-of-type(4):before {
+		content: "Titulo";
+	}
+
+	.obbeneficiario td:nth-of-type(5):before {
+		content: "Acciones";
+	}

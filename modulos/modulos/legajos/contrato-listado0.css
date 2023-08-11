@@ -1,0 +1,53 @@
+/*
+@font-face {
+  font-family: SourceSansPro;
+  src: url(SourceSansPro-Regular.ttf);
+}
+*/
+@page {
+    margin-top: 2cm;
+    margin-bottom: 2cm;
+    margin-left: 2cm;
+    margin-right: 2cm;
+}
+p{
+  font-family: Calibri, Arial, sans-serif;
+}
+table{
+  width: 100%;
+  font-family: Calibri, Arial, sans-serif;
+  font-size: 12px;
+  border-collapse: collapse;
+}
+td{
+  margin: 6px;
+  padding: 6px;
+}
+/*
+tr {
+  margin: 10px;
+  padding: 10px;
+}
+*/
+th{
+   margin: 6px;
+   padding: 6px;
+   background: #848484;
+}
+table tr:nth-child(odd) {
+  background-color: #FFFFFF;
+}
+table tr:nth-child(even) {
+  background-color: #E6E6E6;
+}
+table .apellido {
+  width: 20%;
+}
+table .importe {
+  width: 12%;
+  text-align: right;
+  /*background: #57B223;*/
+}
+.nrodocumento{
+  font-weight: bold;
+}
